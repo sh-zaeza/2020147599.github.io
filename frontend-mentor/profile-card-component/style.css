@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media screen and (min-width: 1268px) {
+  body {
+    background: url(images/bg-pattern-top.svg) no-repeat,
+      url(images/bg-pattern-bottom.svg) no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: top -500px left -200px, bottom -600px right -250px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1265px) {
+  body {
+    background: url(images/bg-pattern-top.svg) no-repeat,
+      url(images/bg-pattern-bottom.svg) no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: top -500px left -400px, bottom -600px right -350px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background: url(images/bg-pattern-top.svg) no-repeat,
+      url(images/bg-pattern-bottom.svg) no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: top -500px left -500px, bottom -600px right -450px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    background: url(images/bg-pattern-top.svg) no-repeat,
+      url(images/bg-pattern-bottom.svg) no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: top -500px left -600px, bottom -600px right -550px;
+  }
+}
+body {
+  background-color: hsl(185, 75%, 39%);
+  position: relative;
+  overflow: hidden;
+}
+.card {
+  background-color: white;
+  position: fixed;
+  width: 348px;
+  height: 348px;
+  top: 50%;
+  left: 50%;
+  margin: -174px 0 0 -140px;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  text-align: center;
+}
+.card-img-top {
+  background: url(images/bg-pattern-card.svg);
+  height: 120px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.bg-img {
+  border-radius: 50%;
+  background: white;
+  margin: -46px 119px 20px 119px;
+  height: 110px;
+  width: 110px;
+}
+img {
+  margin: auto;
+  margin-top: 7px;
+  border-radius: 50%;
+}
+.light {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+#age {
+  font-size: 18px;
+}
+#location {
+  margin: 15px 0 20px 0;
+}
+.details {
+  border-top: 1px solid;
+  border-color: hsl(0, 0%, 90%);
+  display: flex;
+}
+.column {
+  width: 33.3%;
+  padding: 6%;
+}
+.column .light {
+  margin-top: 5px;
+}
