@@ -13,11 +13,6 @@
     background-attachment: fixed, fixed;
     background-position: top -500px left -200px, bottom -600px right -250px;
   }
-  .card {
-    top: 50%;
-    left: 50%;
-    margin: -174px 0 0 -140px;
-  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1265px) {
   body {
@@ -25,11 +20,6 @@
       url(images/bg-pattern-bottom.svg) no-repeat;
     background-attachment: fixed, fixed;
     background-position: top -500px left -400px, bottom -600px right -350px;
-  }
-  .card {
-    top: 50%;
-    left: 50%;
-    margin: -174px 0 0 -140px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -39,11 +29,6 @@
     background-attachment: fixed, fixed;
     background-position: top -500px left -500px, bottom -600px right -450px;
   }
-  .card {
-    top: 50%;
-    left: 50%;
-    margin: -174px 0 0 -140px;
-  }
 }
 @media screen and (max-width: 767px) {
   body {
@@ -52,11 +37,6 @@
     background-attachment: fixed, fixed;
     background-position: top -500px left -600px, bottom -600px right -550px;
   }
-  .card {
-    top: 50%;
-    left: 50%;
-    margin: -174px 0 0 -174px;
-  }
 }
 body {
   background-color: hsl(185, 75%, 39%);
@@ -64,6 +44,9 @@ body {
   overflow: hidden;
 }
 .card {
+  top: 50%;
+  left: 50%;
+  margin: -174px 0 0 -174px;
   background-color: white;
   position: fixed;
   width: 348px;
