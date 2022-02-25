@@ -1,0 +1,30 @@
+* {
+  font-family: "Outfit", sans-serif;
+  color: hsl(220, 15%, 55%);
+  text-align: center;
+}
+body {
+  background-color: hsl(212, 45%, 89%);
+}
+.qrcontainer {
+  background-color: aliceblue;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 1em;
+  padding: 20px;
+}
+.qrcontainer h2 {
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+}
+.qrcontainer img {
+  width: 100%;
+  border-radius: 1em;
+}
+.content-container {
+  margin: 13px;
+}
