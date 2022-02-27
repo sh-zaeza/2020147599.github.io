@@ -10,7 +10,7 @@ body {
 }
 .card-component {
   background-color: hsl(0, 0%, 100%);
-  width: 400px;
+  width: 450px;
   border-radius: 2em;
   position: absolute;
   top: 50%;
