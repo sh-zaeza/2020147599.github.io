@@ -1,0 +1,84 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+div.card-container {
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+  border-radius: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 30px hsl(217, 54%, 5%);
+  padding: 20px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 24px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.eth {
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
+}
+.nft-image {
+  position: relative;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.nft-image img {
+  width: 100%;
+  display: block;
+}
+.nft-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.nft-overlay img {
+  position: absolute;
+  width: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nft-image:hover .nft-overlay {
+  display: block;
+}
+.item-details {
+  justify-content: space-between;
+  margin: -10px 0 5px 0;
+}
+.item-details img {
+  margin-right: 7px;
+}
+.creator-details {
+  justify-content: flex-start;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+.creator-details img {
+  width: 20px;
+  height: 20px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 20px;
+}
