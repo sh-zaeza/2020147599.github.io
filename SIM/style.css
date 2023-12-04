@@ -8,6 +8,10 @@
 body {
   color: #151414;
 }
+a {
+  text-decoration: none;
+  color: #151414;
+}
 main{
   margin: auto;
   width: 1366px;
@@ -116,7 +120,9 @@ main{
     color: #F4FFF8;
     padding: 0 15px 0 15px;
   }
-
+  .btn.btn-primary {
+    background-color: #23864F;
+  }
   .button-filler {
     font-size: 20px;
     margin-left: 50px;
@@ -389,7 +395,7 @@ main{
     position: relative;
     top: -2px;
   }
-  footer {
+  .footer-footer {
     margin-top: 70px;
     width: 100%;
     background-image: url("bg.png");
