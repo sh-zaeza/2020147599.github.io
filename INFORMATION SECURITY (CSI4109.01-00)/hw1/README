@@ -1,0 +1,16 @@
+Student ID: 2020147599
+Name: Aziza Konstantinovna Shukurova
+------------------------------------
+Description of the program:
+The program implements a security policy for a house using C. First, when initiated, the owner and initial keys are assigned. The initial keys include the user input and a special firefighter key. Possible commands include:
+-> ./secure_house <owner_name> <key_1> <key_2> ... <key_n> // initiation
+-> INSERT KEY <user_name> <key>
+-> TURN KEY <user_name>
+-> ENTER HOUSE <user_name>
+-> WHO'S INSIDE?
+-> CHANGE LOCKS <user_name> <key_1> <key_2> ... <key_n>
+-> LEAVE HOUSE <user_name>
+The program responds accordingly and in case a non-listed command is inputted, the program gives out an error message.
+------------------------------------
+How it works:
+The user input is checked on "\n", and if passed, parsed into separate words. The first two words are read and a corresponding response is outputted. The keys and house members are stored in a pre-defined self-growing array and changed/revoked when needed.

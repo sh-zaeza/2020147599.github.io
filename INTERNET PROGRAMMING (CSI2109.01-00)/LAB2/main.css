@@ -1,0 +1,36 @@
+*,
+html {
+  background-color: #edede9;
+  font-family: Verdana;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #d5bdaf;
+  font-weight: 900;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+button {
+    margin: 5px 20px 5px 0px;
+  }
+
+label, input {
+  margin: 0px 20px 10px 0px;
+}
+
+form {
+  border: 2px groove #d5bdaf;
+  height: 100%;
+  width: auto;
+  padding: 20px;
+  margin: 20px;
+}

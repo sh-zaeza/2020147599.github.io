@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Login Form For out Bookstore</h1>
+    <nav>
+      <div class="flex-container">
+        <div><a href="./index.html">Main Page</a></div>
+        <div><a href="./signup.html">Sign Up</a></div>
+        <div><a href="./login.html">Log In</a></div>
+      </div>
+    </nav>
+    <form>
+      <div class="container">
+        <label><b>E-mail</b></label>
+        <input type="text" placeholder="Enter Email" name="uname" required />
+        <br />
+        <label><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <br />
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+        <br />
+        <button type="submit">Login</button>
+        <a href="signup.html"
+          ><button type="button" class="cancel">Sign Up</button></a
+        >
+        <br />
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </body>
+</html>
