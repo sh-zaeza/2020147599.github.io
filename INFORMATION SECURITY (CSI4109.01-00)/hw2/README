@@ -1,0 +1,12 @@
+Student ID: 2020147599
+Name: Aziza Konstantinovna Shukurova
+------------------------------------
+Description of the program:
+The program implements a MAC security policy for a set of files using C. First, when initiated, the program reads mac.policy file with users and their permissions. Possible commands include:
+-> ./mac read <file name>
+-> ./mac write <file name> <what to write>
+
+The program responds accordingly.
+------------------------------------
+How it works:
+The user input is checked on "\n", and if passed, parsed into separate words. The first two words are read and a corresponding response is outputted and actions are performed.

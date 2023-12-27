@@ -1,0 +1,90 @@
+* {
+  margin: auto;
+  padding: 0;
+  border: 0;
+  position: relative;
+}
+html {
+  width: 1020px;
+}
+
+@media only screen and (max-width: 1020px) {
+  html {
+    width: 1020px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  html {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html {
+    width: 480px;
+  }
+}
+
+h1 {
+  max-width: 100%;
+  animation-name: sliding;
+  animation-duration: 2s;
+  margin: 50px 0 50px 0;
+}
+
+@keyframes sliding {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0;
+    width: fit-content;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 100%;
+  margin: 25px 0 25px 0;
+}
+
+.flex-container > .book-display {
+  margin: 5px;
+  text-align: center;
+  font-size: 14px;
+  width: 100px;
+  height: 140px;
+  position: relative;
+}
+img {
+  object-fit: contain;
+  width: 100px;
+  height: 140px;
+  transition: all 2s;
+}
+.enlarged img:hover {
+  width: 120px;
+  height: 160px;
+}
+
+p.info {
+  position: absolute;
+  background: rgba(114, 42, 69, 0.72);
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 45%;
+  transition-delay: 1s;
+}
+
+.info:hover p.info {
+  visibility: visible;
+  opacity: 1;
+}
