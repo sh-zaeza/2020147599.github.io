@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>a little bookstore</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div><h3>a little bookstore</h3></div>
+      <div>
+        already a member? <a href="login.html">log in</a> |
+        <a href="signup.html">become a member</a> |
+        <a href="index.html">go to homepage</a>
+      </div>
+    </header>
+    <main>
+      <div class="filter">
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title, author, or description"
+          />
+          <button type="submit">Search</button>
+        </form>
+        <br />
+
+        <label for="category-select">Filter by Category:</label>
+        <select id="category-select">
+          <option value="">All</option>
+          <option value="fiction">Fiction</option>
+          <option value="romance">Romance</option>
+          <option value="adventure">Adventure</option>
+          <option value="young adult">Young Adult</option>
+        </select>
+        <br />
+        <label for="sort-select">Sort by:</label>
+        <select id="sort-select">
+          <option value="default">Default</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+
+      <div class="product-listing" id="book-catalog"></div>
+    </main>
+    <script src="load.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header,
+header.div {
+  padding: 0 50px 0 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  border-bottom: solid black 3px;
+}
+main {
+  display: flex;
+}
+
+.product-listing {
+  height: 100px;
+  background-color: red;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.filter {
+  height: 100px;
+  background-color: aqua;
+  width: 30%;
+}
+.book-item {
+  margin: 20px;
+  width: 180px;
+  text-align: center;
+}
+
+.book-item img {
+  width: 150px;
+  height: 200px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div><h3>a little bookstore></h3></div>
+      <div>
+        already a member? <a href="login.html">log in</a> |
+        <a href="signup.html">become a member</a> |
+        <a href="index.html">go to homepage</a>
+      </div>
+    </header>
+    <div class="sign-form">
+      <form autocomplete="off">
+        <div class="container">
+          <p>Please fill in this form to create an account.</p>
+          <hr />
+          <div>
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+              autofocus
+            />
+          </div>
+          <div>
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              id="psw"
+              required
+            />
+          </div>
+          <div>
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="psw-repeat"
+              id="psw-repeat"
+              required
+            />
+          </div>
+          <div>
+            <label><b>Enter Birthdate</b></label>
+            <label for="birthday"></label
+            ><input
+              type="date"
+              id="birthday"
+              name="birthday"
+              placeholder="Enter Birthdate"
+            />
+          </div>
+          <hr />
+          <p>
+            By creating an account you agree to our
+            <a href="#">Terms & Privacy</a>.
+          </p>
+          <button type="submit" class="registerbtn">Register</button>
+          <a href="index.html"
+            ><button type="button" class="registerbtn">Cancel</button></a
+          >
+        </div>
+        <div class="container signin">
+          <p>Already have an account? <a href="login.html">Log in</a>.</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

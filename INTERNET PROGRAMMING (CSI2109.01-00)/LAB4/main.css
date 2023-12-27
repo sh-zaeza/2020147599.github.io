@@ -1,0 +1,68 @@
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: honeydew;
+}
+
+header,
+header.div {
+  padding: 0 50px 0 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  border-bottom: solid black 3px;
+}
+main {
+  display: flex;
+}
+
+.product-listing {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.filter {
+  padding: 50px 0 0 30px;
+  width: 25%;
+}
+.book-item {
+  margin: 20px;
+  width: 180px;
+  text-align: center;
+  position: relative;
+}
+
+.book-item img {
+  width: 150px;
+  height: 200px;
+}
+
+.sign-form {
+  text-align: center;
+  padding: 50px;
+}
+
+.sign-form div {
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.book-item .book-price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  display: none;
+  z-index: 1;
+}
+
+.book-item:hover .book-price {
+  display: block;
+}

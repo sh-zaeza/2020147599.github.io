@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)http://localhost:63342/LAB4/index.html?_ijt=a6f653smmsc68cbmdsn9hpvam4&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a little bookstore</title>
+    <link rel="stylesheet" href="./a little bookstore_files/main.css">
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1110.0" data-gr-ext-installed="">
+    <header>
+      <div><h3>a little bookstore</h3></div>
+      <div>
+        already a member? <a href="http://localhost:63342/LAB4/login.html">log in</a> |
+        <a href="http://localhost:63342/LAB4/signup.html">become a member</a>
+      </div>
+    </header>
+    <main>
+      <div class="filter">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search by title, author, or description">
+          <button type="submit">Search</button>
+        </form>
+
+        <label for="category-select">Filter by Category:</label>
+        <select id="category-select">
+          <option value="">All</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Science Fiction">Science Fiction</option>
+        </select>
+
+        <label for="sort-select">Sort by:</label>
+        <select id="sort-select">
+          <option value="default">Default</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+
+      <div class="product-listing" id="book-catalog"></div>
+    </main>
+    <script src="./a little bookstore_files/load.js.download"></script>
+  
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
