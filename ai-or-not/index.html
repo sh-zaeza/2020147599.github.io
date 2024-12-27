@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI or Not Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Batch Selection Screen -->
+        <div id="batch-selection-screen">
+            <h1>Choose Your Batch</h1>
+            <p>Select the batch of images you want to play with:</p>
+            <button class="batch-btn" data-batch="1">Batch 1</button>
+            <button class="batch-btn" data-batch="2">Batch 2</button>
+            <button class="batch-btn" data-batch="3">Batch 3</button>
+            <button class="batch-btn" data-batch="4">Batch 4</button>
+            <button class="batch-btn" data-batch="5">Batch 5</button>
+        </div>
+
+        <!-- Intro Screen -->
+        <div id="intro-screen" style="display:none;">
+            <h1>Welcome to AI or Not!</h1>
+            <p>Can you guess which images are AI-generated?</p>
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" style="display:none;">
+            <div id="image-container">
+                <img id="game-image" src="" alt="Game Image" />
+            </div>
+            <div>
+                <button id="ai-btn">AI-Generated</button>
+                <button id="real-btn">Real</button>
+            </div>
+            <p id="score">Score: 0</p>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" style="display:none;">
+            <h1>Game Over</h1>
+            <p id="final-score"></p>
+            <button id="restart-button">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
