@@ -28,7 +28,7 @@ h1, p {
 }
 
 #logo {
-    width: 200px; /* Adjust size as needed */
+    width: 150px; /* Adjust size as needed */
     height: auto;
     transition: transform 0.2s ease; /* Adds a hover effect */
 }
