@@ -70,7 +70,7 @@ const images = [
     { src: 'images/game/batch4/5-y.png', isAI: true },
     { src: 'images/game/batch4/6-y.png', isAI: true },
     { src: 'images/game/batch4/7-n.png', isAI: false },
-    { src: 'images/game/batch4/8-y.png', isAI: true },
+    { src: 'images/game/batch4/8-n.png', isAI: false },
     { src: 'images/game/batch4/9-y.png', isAI: true },
     { src: 'images/game/batch4/10-n.png', isAI: false },
     { src: 'images/game/batch4/11-n.png', isAI: false },
