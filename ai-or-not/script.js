@@ -33,7 +33,7 @@ const images = [
     { src: 'images/game/batch2/10-y.png', isAI: true },
     { src: 'images/game/batch2/11-y.png', isAI: true },
     { src: 'images/game/batch2/12-y.png', isAI: true },
-    { src: 'images/game/batch2/13-y.png', isAI: true },
+    { src: 'images/game/batch2/13-y.png', isAI: false },
     { src: 'images/game/batch2/14-y.png', isAI: true },
     { src: 'images/game/batch2/15-y.png', isAI: true },
     { src: 'images/game/batch2/16-n.png', isAI: false },
